@@ -9,5 +9,12 @@ Reeco is mobile app raises the theme of environmental cleanliness and garbage ma
 
 ## Screenshot
 
-![Login Screen](/assets/Screenshot/login.jpg) ![Register Screen](/assets/Screenshot/register.jpg) ![Home Screen](/assets/Screenshot/home.jpg)
-![Result Scan Screen](/assets/Screenshot/hasilScan.jpg) ![Recommendation Recycle Screen](/assets/Screenshot/rekomendasi.jpg)
+<br />
+<div>
+  <img src="/assets/Screenshot/login.jpg" alt="Login Screen" height="300">
+  <img src="/assets/Screenshot/register.jpg" alt="Register Screen" height="300">  
+  <img src="/assets/Screenshot/home.jpg" alt="Home Screen" height="300">    
+  <img src="/assets/Screenshot/hasilScan.jpg" alt="Result Scan Screen" height="300">  
+  <img src="/assets/Screenshot/rekomendasi.jpg" alt="Recommendation Recycle Screen" height="300">    
+</div>
+<br />
