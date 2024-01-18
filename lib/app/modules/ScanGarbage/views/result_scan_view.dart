@@ -1,14 +1,18 @@
+import 'dart:io';
+
 import 'package:flutter/material.dart';
 
 import 'package:get/get.dart';
 import 'package:reeco/app/global/theme/my_color.dart';
 import 'package:reeco/app/global/theme/my_text_style.dart';
+import 'package:reeco/app/modules/ScanGarbage/controllers/scan_garbage_controller.dart';
 import 'package:reeco/app/routes/app_pages.dart';
 
 class ResultScanView extends GetView {
   const ResultScanView({Key? key}) : super(key: key);
   @override
   Widget build(BuildContext context) {
+    final scanController = Get.find<ScanGarbageController>();
     return Scaffold(
         appBar: AppBar(
           title: Text(
@@ -62,8 +66,7 @@ class ResultScanView extends GetView {
                   decoration: BoxDecoration(
                       borderRadius: BorderRadius.circular(20),
                       image: DecorationImage(
-                          image: NetworkImage(
-                              "https://www.cnet.com/a/img/resize/9fc2756cb6a31e33521bede3601bd08beec71bb8/hub/2022/12/05/739c9fde-8e5c-46a5-a0e4-cbad5214f48a/gettyimages-998263814.jpg?auto=webp&fit=crop&height=675&width=1200"),
+                          image: FileImage(File(scanController.image!.path)),
                           fit: BoxFit.cover)),
                 ),
                 SizedBox(

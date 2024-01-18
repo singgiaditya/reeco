@@ -30,7 +30,7 @@ class NavigationBarView extends GetView<NavigationBarController> {
       body: Obx(() => tabPage[controller.tabIndex.value]),
       floatingActionButton: FloatingActionButton(
         onPressed: () {
-          Get.toNamed(Routes.resultScan);
+          Get.toNamed(Routes.scanGarbage);
         },
         child: Icon(Icons.crop_free_sharp),
         backgroundColor: primaryColor,
